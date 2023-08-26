@@ -1,6 +1,7 @@
 {
+    "port": 80,
     "slack_access_token":"",
-    "approval_emoji": ":white_check_mark:",
-    "reviewing_emoji": ":eyes:",
-    "reviewing_interval": 5
+    "approval_emoji": "white_check_mark",
+    "reviewing_emoji": "eyes",
+    "reviewing_interval": 1
 }

@@ -1,13 +1,19 @@
 # Define the endpoint URL
-$endpointUrl = "https://2a67-82-14-93-81.ngrok.io/message"
+$endpointUrl = "https://0518-82-14-93-81.ngrok.io/message"
 
 # Create a hashtable representing your JSON data
 $jsonData = @{
     "channel" = "C05Q0F85EGZ"
     "mentions" = @("UD1QZGTSS")
     "message" = "Message"
-    #"reminderIntervals" = ""
+    "reminderIntervals" = 2
 }
+
+# $jsonData = @{
+#     "channel" = "C05Q0F85EGZ"
+#     "mentions" = @("UD1QZGTSS")
+#     "message" = "Message"
+# }
 
 # Convert the hashtable to JSON format
 $jsonBody = $jsonData | ConvertTo-Json
