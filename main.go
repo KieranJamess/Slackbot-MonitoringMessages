@@ -92,7 +92,7 @@ func handleMessage(write http.ResponseWriter, request *http.Request, config Conf
 	var message SlackMessage
 	err := decoder.Decode(&message)
 	if err != nil {
-		errorLogger.Fatalf("Error decoding JSON: %v", err)
+		errorLogger.Printf("Error decoding JSON: %v", err)
 	}
 
 	// Set default interval if message is missing this field
